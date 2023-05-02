@@ -248,7 +248,6 @@ gsap.to("#home canvas", {
         scrub: .1,
         trigger: "#home",
         start: "bottom 100%",
-        // markers:true,
     }
 })
 
@@ -256,7 +255,6 @@ ScrollTrigger.create({
     trigger: "#home",
     start: "bottom 100%",
     pin: true,
-    // markers:true
 })
 
 var cur = document.querySelector("#cursor")
@@ -327,15 +325,6 @@ function txt() {
         clutter += `<span> ${char} </span>`
     })
     document.querySelector("#txt>h1").innerHTML = clutter
-    // ScrollTrigger.create({
-    //     trigger:"#txt",
-    //     pin:true,
-    //     start:"bottom 100%",
-    //     markers:true
-
-
-    // })
-
 
     var tl = gsap.timeline()
     tl.to("h1>span", {
@@ -347,8 +336,6 @@ function txt() {
             start: "bottom 60%",
             end: "start 20%",
             scrub: 1,
-            // markers:true,
-
         }
     })
 
@@ -366,8 +353,6 @@ function txt() {
             trigger: "h2",
             start: "bottom 50%",
             scrub: 1,
-            // markers:true,
-
         }
     })
 
@@ -385,7 +370,6 @@ function ring() {
             start: "top 40%",
             trigger: "#pg2",
             scrub: 6,
-            // markers:true
         }
     })
 
@@ -402,7 +386,6 @@ function ring() {
             start: "top 60%",
             scrub: 2,
             end: "bottom 50%",
-            // markers:true
 
         },
         opacity: 0,
@@ -416,13 +399,6 @@ ring()
 
 
 function text1() {
-
-    // var clut2 = "";
-    // document.querySelector("#over>h1").textContent.split("")
-    // .forEach(function(tex){
-    //     clut2 += `<span>${tex}</span>`
-    // })
-    // document.querySelector("#over>h1").innerHTML = clut2
 
     gsap.from("#over>h1", {
         scrollTrigger: {
@@ -447,9 +423,7 @@ function pg() {
         scrollTrigger: {
             trigger: "#pg4",
             start: "top 0%",
-            // end:"200% 10%",
             pin: true,
-            //    markers:true,
             scrub: 4
         },
 
@@ -459,12 +433,8 @@ function pg() {
         scrollTrigger: {
             trigger: "#pg5",
             start: "top 50%",
-            // end:"230% 0%",
-            // markers:true,
             end: "30% 20%",
-
             scrub: .1
-
         },
         left: "5%"
     })
@@ -490,7 +460,6 @@ function pg6() {
             trigger: "#pg5",
             start: "20% 0%",
             scrub: .1,
-            // markers:true
         }
     })
 }
@@ -621,8 +590,6 @@ function canvas1() {
             scrub: 2,
             trigger: "#can>canvas",
             start: "top 0%",
-            // markers:true,
-
             end: "bottom -20%",
             ease: "none"
         },
@@ -658,7 +625,6 @@ function canvas1() {
         scrollTrigger: {
             trigger: "#can",
             start: "bottom 0%",
-            // markers:true,
             scrub: 3,
             ease: "none"
         }
@@ -678,9 +644,7 @@ function canvas1() {
         scrollTrigger: {
             trigger: "#can>h1",
             start: "300% 0%",
-            // markers:true,
             scrub: 2,
-            // end:"bottom 40%"
         }
     })
 }
@@ -725,7 +689,6 @@ function pg9() {
             start: "top 5%",
             scrub: .1,
             end: "top 0%",
-            // markers:true
         },
 
     })
@@ -741,7 +704,6 @@ function svg() {
             start: "top 5%",
             scrub: .1,
             end: "top 0%",
-            // markers:true,
         },
         display: "block",
         top: "-30%"
@@ -756,7 +718,6 @@ function left() {
             trigger: "#pg8",
             start: "top 65%",
             scrub: ".1",
-            // markers:true,
         },
         left: "15%"
 
